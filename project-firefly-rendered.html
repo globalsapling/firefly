@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Firefly - Open Source Small Nuclear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --primary-dark: #2980b9;
+            --secondary-color: #2c3e50;
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --section-bg-color: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        section {
+            background-color: var(--section-bg-color);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: var(--secondary-color);
+            color: #fff;
+        }
+
+        #open-resources ul,
+        #partnerships ul,
+        #support ul,
+        #volunteer ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #open-resources li,
+        #partnerships li,
+        #support li,
+        #volunteer li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.3s ease, padding-left 0.3s ease;
+        }
+
+        #open-resources li:hover,
+        #partnerships li:hover,
+        #support li:hover,
+        #volunteer li:hover {
+            background-color: #f0f0f0;
+            padding-left: 10px;
+        }
+
+        #open-resources li:last-child,
+        #partnerships li:last-child,
+        #support li:last-child,
+        #volunteer li:last-child {
+            border-bottom: none;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+
+            .btn {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Project Firefly</h1>
+            <p>Open Source Small Nuclear – perpetual energy for all</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="intro">
+            <h2>Welcome to Project Firefly</h2>
+            <p>An ambitious open-source initiative dedicated to the development of a Small Molten Salt Fast Breeder Reactor (MSFBR). This project aims to revolutionize the nuclear energy sector by leveraging the principles of open-source collaboration to create a safer, more efficient, and sustainable nuclear reactor.</p>
+        </section>
+
+        <section id="breaking-tradition">
+            <h2>Breaking Tradition</h2>
+            <p>The nuclear industry has historically been shrouded in secrecy and proprietary practices, often driven by the sensitive nature of nuclear technology and national security concerns. This closed-off approach has hindered collaboration, innovation, and rapid advancement in the field. However, the landscape is changing. Inspired by the success of open-source projects in other scientific domains, Project Firefly seeks to bring transparency and community-driven development to nuclear reactor technology.</p>
+        </section>
+
+        <section id="goals">
+            <h2>Project Goals</h2>
+            <ul>
+                <li><strong>Innovative Design:</strong> Develop a state-of-the-art fast breeder reactor using molten salt technology, emphasizing safety and efficiency.</li>
+                <li><strong>Sustainability:</strong> Utilize thorium and other fertile materials to breed fissile fuel, ensuring long-term sustainability and reduced nuclear waste.</li>
+                <li><strong>Open Collaboration:</strong> Create a collaborative platform where researchers, engineers, and enthusiasts can contribute to the reactor's design and development.</li>
+                <li><strong>Transparency:</strong> Maintain an open and transparent development process, making all design, testing, and implementation details accessible to the public.</li>
+            </ul>
+        </section>
+
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>High Efficiency:</strong> Achieve high thermal efficiency with molten salt as both fuel and coolant.</li>
+                <li><strong>Enhanced Safety:</strong> Incorporate passive safety features to minimize the risk of accidents.</li>
+                <li><strong>Breeding Capability:</strong> Efficiently convert fertile materials into fissile fuel, extending the fuel supply.</li>
+                <li><strong>Modularity:</strong> Design a modular system that can be scaled and adapted to various energy needs.</li>
+            </ul>
+        </section>
+
+        <section id="open-resources">
+            <h2>Open Resources</h2>
+            <p>Project Firefly is committed to open-source principles. Our resources are freely available to the community:</p>
+            <ul>
+                <li><a href="#">Technical Documentation</a></li>
+                <li><a href="#">Design Specifications</a></li>
+                <li><a href="#">Research Papers</a></li>
+                <li><a href="#">Simulation Tools</a></li>
+            </ul>
+        </section>
+
+        <section id="partnerships">
+            <h2>Partnerships</h2>
+            <p>We collaborate with various organizations to advance our mission:</p>
+            <ul>
+                <li>Academic Institutions</li>
+                <li>Research Laboratories</li>
+                <li>Energy Companies</li>
+                <li>Environmental Organizations</li>
+            </ul>
+            <p><a href="#" class="btn">Contact us</a></p>
+        </section>
+
+        <section id="support">
+            <h2>Support Project Firefly</h2>
+            <p>Your support can help accelerate the development of clean, sustainable nuclear energy:</p>
+            <p>
+                <a href="#" class="btn">Make a Donation</a>
+                <a href="#" class="btn">Sponsor a Project</a>
+                <a href="#" class="btn">Contribute Computing</a>
+            </p>
+        </section>
+
+        <section id="volunteer">
+            <h2>Volunteer Opportunities</h2>
+            <p>Join our global team of volunteers and contribute your skills:</p>
+            <ul>
+                <li>Engineering and Design</li>
+                <li>Software Development</li>
+                <li>Scientific Research</li>
+                <li>Community Outreach</li>
+                <li>Content Creation</li>
+            </ul>
+            <p><a href="#" class="btn">Sign up as a volunteer</a></p>
+        </section>
+
+        <section id="license">
+            <h2>License</h2>
+            <p>This project is licensed under the MIT License - see the LICENSE file for details.</p>
+        </section>
+
+        <section id="code-of-conduct">
+            <h2>Code of Conduct</h2>
+            <p>We are committed to fostering a welcoming and inclusive environment. Please read our CODE_OF_CONDUCT.md to understand the expectations for participation in this project.</p>
+        </section>
+
+        <section id="community">
+            <h2>Community and Support</h2>
+            <p>Join our community to stay updated and participate in discussions:</p>
+            <p>
+                <a href="#" class="btn">Join WhatsApp Group</a>
+                <a href="#" class="btn">Check Round-table Schedule</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Project Firefly. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
