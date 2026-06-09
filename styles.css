@@ -195,12 +195,17 @@ h1 {
 }
 
 .meta-item {
-    padding: 18px 20px 18px 0;
+    padding: 18px 24px;
     border-right: 1px solid var(--rule);
+}
+
+.meta-item:first-child {
+    padding-left: 0;
 }
 
 .meta-item:last-child {
     border-right: none;
+    padding-right: 0;
 }
 
 .meta-item dt {
@@ -461,8 +466,13 @@ footer .mono {
         grid-template-columns: 1fr 1fr;
     }
 
-    .meta-item:nth-child(2) {
+    .meta-item:nth-child(odd) {
+        padding-left: 0;
+    }
+
+    .meta-item:nth-child(even) {
         border-right: none;
+        padding-right: 0;
     }
 
     section {
