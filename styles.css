@@ -36,6 +36,16 @@ body {
     font-feature-settings: "tnum" 1;
 }
 
+/* ---------- Proton scroll field (background) ---------- */
+#proton-field {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
