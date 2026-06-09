@@ -52,9 +52,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container navbar-inner">
-            <a href="/" class="navbar-title">Project Firefly</a>
+            <a href="index.html" class="navbar-title">Project Firefly</a>
         </div>
     </nav>
     <header class="masthead">
@@ -246,5 +246,21 @@
             <span class="mono">&copy; 2025 — All rights reserved.</span>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            var navbar = document.getElementById('navbar');
+            if (!navbar) return;
+            function onScroll() {
+                if (window.scrollY > 140) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        })();
+    </script>
 </body>
 </html>
