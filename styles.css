@@ -409,12 +409,12 @@ a {
     text-decoration: none;
 }
 
-.section-body p a {
+.section-body p a:not(.btn) {
     border-bottom: 1px solid var(--rule-strong);
     padding-bottom: 1px;
 }
 
-.section-body p a:hover {
+.section-body p a:not(.btn):hover {
     border-bottom-color: var(--accent);
 }
 
@@ -427,12 +427,18 @@ a {
     margin-top: 20px;
 }
 
+.action-row .btn {
+    flex: 1 1 0;
+    min-width: 180px;
+    max-width: 300px;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 15px 26px;
+    padding: 16px 24px;
     border: 1px solid var(--accent);
     color: var(--accent);
     background: transparent;
@@ -532,6 +538,12 @@ footer .mono {
     .action-row {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .action-row .btn {
+        flex: 0 0 auto;
+        min-width: 0;
+        max-width: none;
     }
 
     .btn {

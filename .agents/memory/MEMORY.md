@@ -1,0 +1,1 @@
+- [Button vs inline-link cascade](button-link-cascade.md) — `.section-body p a` clobbers `.btn` styles by specificity; scope inline-link rules with `:not(.btn)`.
