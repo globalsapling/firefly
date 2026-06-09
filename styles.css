@@ -42,6 +42,64 @@ body {
     padding: 0 32px;
 }
 
+/* ---------- Banner ---------- */
+.banner {
+    display: block;
+    background: var(--ink);
+    color: var(--paper);
+    border-bottom: 1px solid var(--ink);
+    transition: background-color 0.15s ease;
+}
+
+.banner:hover {
+    background: var(--accent);
+}
+
+.banner-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.banner-label {
+    font-size: 0.62rem;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--paper);
+    border: 1px solid var(--rule-strong);
+    padding: 4px 7px;
+    flex-shrink: 0;
+}
+
+.banner-text {
+    font-size: 0.85rem;
+    color: var(--paper);
+    flex: 1;
+}
+
+.banner-cta {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--paper);
+    flex-shrink: 0;
+}
+
+@media (max-width: 560px) {
+    .banner-inner {
+        flex-wrap: wrap;
+        gap: 8px 12px;
+    }
+
+    .banner-text {
+        flex-basis: 100%;
+        order: 3;
+    }
+}
+
 /* ---------- Masthead ---------- */
 .masthead {
     border-bottom: 1px solid var(--ink);
@@ -311,7 +369,10 @@ a {
 .btn {
     display: inline-flex;
     align-items: center;
-    padding: 9px 18px;
+    justify-content: center;
+    text-align: center;
+    min-width: 220px;
+    padding: 11px 22px;
     border: 1px solid var(--accent);
     color: var(--accent);
     background: transparent;
@@ -323,7 +384,6 @@ a {
     cursor: pointer;
     transition: background-color 0.15s ease, color 0.15s ease;
     line-height: 1.4;
-    white-space: nowrap;
 }
 
 .btn:hover {
