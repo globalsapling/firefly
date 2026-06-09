@@ -42,59 +42,86 @@ body {
     padding: 0 32px;
 }
 
-/* ---------- Banner ---------- */
-.banner {
-    display: block;
-    background: var(--ink);
-    color: var(--paper);
-    border-bottom: 1px solid var(--ink);
-    transition: background-color 0.15s ease;
+/* ---------- Floating navbar ---------- */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 244, 241, 0.85);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
 }
 
-.banner:hover {
-    background: var(--accent);
-}
-
-.banner-inner {
+.navbar-inner {
     display: flex;
     align-items: center;
-    gap: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
-.banner-label {
+.navbar-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+}
+
+.navbar-title:hover {
+    color: var(--accent);
+}
+
+/* ---------- Inline highlight ---------- */
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 40px 0 8px;
+    padding: 18px 22px;
+    border: 1px solid var(--rule-strong);
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.highlight:hover {
+    background: var(--paper);
+    border-color: var(--accent);
+}
+
+.highlight-label {
     font-size: 0.62rem;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: var(--paper);
-    border: 1px solid var(--rule-strong);
+    color: var(--accent);
+    border: 1px solid var(--accent);
     padding: 4px 7px;
     flex-shrink: 0;
 }
 
-.banner-text {
-    font-size: 0.85rem;
-    color: var(--paper);
+.highlight-text {
+    font-size: 0.9rem;
+    color: var(--ink);
     flex: 1;
 }
 
-.banner-cta {
+.highlight-cta {
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.09em;
-    color: var(--paper);
+    color: var(--accent);
     flex-shrink: 0;
 }
 
 @media (max-width: 560px) {
-    .banner-inner {
+    .highlight {
         flex-wrap: wrap;
-        gap: 8px 12px;
+        gap: 10px 14px;
     }
 
-    .banner-text {
+    .highlight-text {
         flex-basis: 100%;
         order: 3;
     }
@@ -372,7 +399,7 @@ a {
     justify-content: center;
     text-align: center;
     min-width: 220px;
-    padding: 11px 22px;
+    padding: 16px 32px;
     border: 1px solid var(--accent);
     color: var(--accent);
     background: transparent;
