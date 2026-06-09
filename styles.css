@@ -262,6 +262,14 @@ h2 {
     flex: 1;
 }
 
+.index-list li.pending .idx-label {
+    color: var(--gray);
+}
+
+.index-list li.pending .status-note {
+    flex-shrink: 0;
+}
+
 .index-list a .arrow {
     color: var(--gray-light);
     transition: transform 0.15s ease, color 0.15s ease;
