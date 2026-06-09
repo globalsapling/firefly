@@ -422,7 +422,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 14px 26px 16px;
+    padding: 15px 26px;
     border: 1px solid var(--accent);
     color: var(--accent);
     background: transparent;
