@@ -1,7 +1,7 @@
 # Project Firefly
 
 ## Overview
-Project Firefly is a static HTML website for an open-source initiative dedicated to developing a Small Molten Salt Fast Breeder Reactor (MSFBR). The site presents information about the project's goals, features, partnerships, and volunteer opportunities.
+Project Firefly is a static HTML website for an open-source initiative building a community-selected advanced small reactor. The specific reactor design is being chosen through the 2026 Founding Series of the Firefly Reading Circle. The site presents the project mission, the Reading Circle (/circle), and volunteer/partnership opportunities.
 
 ## Project Structure
 - `index.html` - Main landing page with all content sections
